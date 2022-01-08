@@ -61,7 +61,8 @@ class StockFormatter(GenericDataFormatter):
       ('ATRr_14', DataTypes.REAL_VALUED, InputTypes.OBSERVED_INPUT),
       ('weekday', DataTypes.CATEGORICAL, InputTypes.KNOWN_INPUT),
       ('day', DataTypes.CATEGORICAL, InputTypes.KNOWN_INPUT),
-      ('month', DataTypes.CATEGORICAL, InputTypes.KNOWN_INPUT)
+      ('month', DataTypes.CATEGORICAL, InputTypes.KNOWN_INPUT),
+      ('symbol', DataTypes.CATEGORICAL, InputTypes.STATIC_INPUT),
   ]
 
   def __init__(self):
