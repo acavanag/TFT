@@ -794,6 +794,10 @@ class TemporalFusionTransformer(object):
             combined_input_size,
         ))
 
+    print("THESE BE OUR INPUTS YO")
+    print(all_inputs)
+    print("END THESE BE OUR INPUTS YO")
+
     unknown_inputs, known_combined_layer, obs_inputs, static_inputs \
         = self.get_tft_embeddings(all_inputs)
 
