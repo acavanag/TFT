@@ -825,6 +825,12 @@ class TemporalFusionTransformer(object):
         Tensor output for variable selection network
       """
 
+      print("THIS BE OUR PROBLEMO")
+      print(type(embedding))
+      print(embedding.shape)
+      print(embedding)
+      print("END THIS BE OUR PROBLEMO")
+
       # Add temporal features
       _, num_static, _ = embedding.get_shape().as_list()
 
