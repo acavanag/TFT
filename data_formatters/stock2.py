@@ -231,11 +231,13 @@ class StockFormatter(GenericDataFormatter):
   def get_fixed_params(self):
     """Returns fixed model parameters for experiments."""
 
+    sequence_length = 20 #120
+
     fixed_params = {
-        'total_time_steps': 120 + 5,
-        'num_encoder_steps': 120,
-        'num_epochs': 100,
-        'early_stopping_patience': 5,
+        'total_time_steps': sequence_length + 5,
+        'num_encoder_steps': sequence_length,
+        'num_epochs': 350,
+        'early_stopping_patience': 25,
         'multiprocessing_workers': 5
     }
 
@@ -248,7 +250,7 @@ class StockFormatter(GenericDataFormatter):
         'dropout_rate': 0.2,
         'hidden_layer_size': 80,
         'learning_rate': 0.001,
-        'minibatch_size': 256,
+        'minibatch_size': 32,
         'max_gradient_norm': 0.01,
         'num_heads': 1,
         'stack_size': 1
