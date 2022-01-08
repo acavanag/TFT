@@ -27,6 +27,7 @@ import data_formatters.favorita
 import data_formatters.traffic
 import data_formatters.volatility
 import data_formatters.stock
+import data_formatters.stock2
 
 class ExperimentConfig(object):
   """Defines experiment configs and paths to outputs.
